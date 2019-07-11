@@ -2,21 +2,24 @@ package com.stackroute.spring;
 
 public class Movie
 {
-    private Actor actor;
+    private Actor actors;
 
     public Movie(Actor actor) {
-        this.actor = actor;
+        this.actors = actor;
     }
 
     public void setActor(Actor actor) {
-        this.actor = actor;
+        this.actors = actor;
     }
 
     public Actor getActor() {
-        return actor;
+        return actors;
     }
-    public void acting()
-    {
-        System.out.println("Actor name is "+actor.getName()+" actor gender is "+actor.getGender()+" actor age is "+actor.getAge());
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "actor=" + actors +
+                '}';
     }
 }

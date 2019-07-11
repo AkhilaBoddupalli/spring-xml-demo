@@ -36,5 +36,12 @@ public class Actor
         this.age = age;
     }
 
-
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
