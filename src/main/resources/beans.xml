@@ -4,12 +4,14 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="beanlifecycle" class="com.stackroute.spring.BeanLifeCycleDemo" init-method="Init" destroy-method="customDestroy">
 
+    <bean id="beanlifecycle" class="com.stackroute.spring.BeanLifeCycleDemo" init-method="init" destroy-method="customDestroy">
 
     </bean>
 
+    <bean id="custombeanpostprocessor" class="com.stackroute.spring.CustomBeanPostProcessor">
 
+    </bean>
 
 </beans>
 

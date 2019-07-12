@@ -1,6 +1,9 @@
 package com.stackroute;
 
+//import com.stackroute.spring.BeanLifeCycleDemo;
 import com.stackroute.spring.BeanLifeCycleDemo;
+//import com.stackroute.spring.CustomBeanPostProcessor;
+import com.stackroute.spring.CustomBeanPostProcessor;
 import com.stackroute.spring.Movie;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
@@ -24,6 +27,7 @@ public class Main {
 
         ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
         BeanLifeCycleDemo beanLifeCycleDemo = (BeanLifeCycleDemo) applicationContext.getBean("beanlifecycle");
+        CustomBeanPostProcessor customBeanPostProcessor=(CustomBeanPostProcessor) applicationContext.getBean("custombeanpostprocessor");
 
         }
 }

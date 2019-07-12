@@ -1,13 +1,15 @@
 package com.stackroute.spring;
 
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanLifeCycleDemo implements InitializingBean, DisposableBean {
 
-        public void Init() throws Exception {
+        public void init() throws Exception {
             System.out.println("Custom init");
         }
 
