@@ -22,7 +22,7 @@ public class Main {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         Movie movie=(Movie)applicationContext.getBean("movie");
        // Movie movie1=(Movie)applicationContext.getBean("movie");
-System.out.println(movie);
+        System.out.println(movie);
         //System.out.println(movie1);
 
 
