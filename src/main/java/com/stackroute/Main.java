@@ -29,7 +29,7 @@ public class Main {
         movie.setApplicationContext(applicationContext);
         //movie .setBeanFactory(beanFactory);
         movie.setBeanName("beam123");
-        //System.out.println(movie1);
+
 
 
         }

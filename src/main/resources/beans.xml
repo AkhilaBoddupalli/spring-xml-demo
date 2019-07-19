@@ -4,6 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    //creating beans-->
+
     <bean id="movie" class="com.stackroute.spring.Movie" scope="singleton">
         <constructor-arg name="actor" ref="actor"> </constructor-arg>
 

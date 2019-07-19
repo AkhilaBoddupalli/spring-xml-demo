@@ -27,6 +27,8 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNam
         return actor;
     }
 
+    //implementing interface methods
+
 
     @Override
     public String toString() {
