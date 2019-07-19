@@ -25,7 +25,7 @@ public class Main {
         movie.acting();
         movie2.acting();
 
-
+        //comparing two beans if they are equal
         System.out.println(movie==movie2);
 
 

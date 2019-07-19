@@ -2,6 +2,7 @@ package com.stackroute.spring;
 
 public class Movie
 {
+    //creating actor object and accessing the getters and setters
     private Actor actor;
 
     public Movie(Actor actor) {
