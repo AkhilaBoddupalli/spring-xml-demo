@@ -4,6 +4,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--   //creating beans-->
     <bean id="beanlifecycle" class="com.stackroute.spring.BeanLifeCycleDemo" init-method="Init" destroy-method="customDestroy">
 
 

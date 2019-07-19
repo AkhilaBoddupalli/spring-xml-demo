@@ -7,6 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class BeanLifeCycleDemo implements InitializingBean, DisposableBean {
 
+
+        //user defined methods(custom methods)
         public void Init() throws Exception {
             System.out.println("Custom init");
         }
@@ -15,7 +17,7 @@ public class BeanLifeCycleDemo implements InitializingBean, DisposableBean {
             System.out.println("Custom destroy");
         }
 
-
+    //default interface methods
     @Override
     public void destroy() throws Exception {
         System.out.println("Default destroy");

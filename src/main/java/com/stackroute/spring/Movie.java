@@ -12,7 +12,7 @@ public class Movie
 {
     private Actor actor;
 
-
+    //accessing actor class
     public Movie(Actor actor) {
         this.actor = actor;
     }
