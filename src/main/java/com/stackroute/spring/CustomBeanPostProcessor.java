@@ -6,7 +6,7 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 
 public class CustomBeanPostProcessor implements BeanPostProcessor
 {
-  
+  //implementing beanpostprocessor(interacting with bean)
     @Override
     public Object postProcessBeforeInitialization(Object bean,String beanName) throws BeansException {
         return null;
