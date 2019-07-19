@@ -14,9 +14,11 @@ import org.springframework.core.AliasRegistry;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
 
-public class Main {
+public class Main
+{
     public static void main(String[] args)
     {
+        //using application context
         ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
         Movie movie=context.getBean("movie",Movie.class);
         movie.acting();
@@ -24,19 +26,19 @@ public class Main {
 //        Actor actor=(Actor) context.getBean("actor",Actor.class);
 //        actor.displayActorInfo();
 
+        //using bean factory
+
         ClassPathResource resource=new ClassPathResource("beans.xml");
         BeanFactory factory=new XmlBeanFactory(resource);
         Movie movie1=context.getBean("movie",Movie.class);
         movie1.acting();
+
+        //using beandefinition reader
 
         DefaultListableBeanFactory beanFactory=new DefaultListableBeanFactory();
         BeanDefinitionReader reader=new XmlBeanDefinitionReader(beanFactory);
         reader.loadBeanDefinitions(new FileSystemResource("src/main/resources/beans.xml"));
         Movie movie2=context.getBean("movie",Movie.class);
         movie2.acting();
-
-
-
-
-        }
+    }
 }

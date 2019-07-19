@@ -4,14 +4,15 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!--    creating bean objects-->
 
     <bean id="actor" class="com.stackroute.spring.Actor">
 
 
-        <property name="name" value="SRK"></property>
+        <property name="name" value="akhila"></property>
         <!--        setter injection-->
-        <property name="gender" value="Male"></property>
-        <property name="age" value="50"></property>
+        <property name="gender" value="female"></property>
+        <property name="age" value="22"></property>
     </bean>
 
             <bean id="movie" class="com.stackroute.spring.Movie">
@@ -23,8 +24,6 @@
 
 
 
-
-    <!--    <bean id="VodafoneId" class="package com.spring.stackroute.Vodafone"></bean>-->
 
 </beans>
 
